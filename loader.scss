@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+#loader{
+	position: relative;
+	font-size: 10em;
+	color: #00F7FF;
+	font-family: 'VT323', cursive;
+	text-decoration: none;
+	float: left; 
+	z-index: 2;
+    animation: fade 2s steps(12) 2 ;
+	display: inherit;
+	transition:none;
+}
+
+ #loader:nth-of-type(1) {
+	animation-delay: 0.75s;
+
+}
+
+ #loader:nth-of-type(2) {
+		animation-delay: 0.92s;
+}
+#loader:nth-of-type(3) {
+		animation-delay: 1.08s;
+}
+ #loader:nth-of-type(4) {
+		animation-delay: 1.2s;
+}
+
+#loader:nth-of-type(5) {
+		animation-delay: 1.5s;
+}
+#loader:nth-of-type(6) {
+		animation-delay: 1.7s;
+}
+#loader:nth-of-type(7) {
+		animation-delay: 1.85s;
+}
+
+
+/*keyframes for fade animation*/
+
+
+@keyframes fade{
+	
+	0%{
+		transform: translateY(0in) scale(1);
+		color: #00F7FF;
+		opacity: 1;
+		
+	}
+
+
+	90%,100%{
+		color:black;
+		transform: translateY(1in) scale(0.7);
+		opacity: 0;
+	}
+}
+
+
